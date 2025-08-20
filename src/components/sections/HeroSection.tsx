@@ -137,39 +137,6 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-
-        {/* Bottom section - Services preview */}
-        <div className="pb-20 border-t border-slate-100 fade-in delay-1000">
-          <div className="pt-16 text-center mb-12">
-            <h2 className="text-2xl font-light text-slate-900 mb-4">
-              Comprehensive luxury services
-            </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              From real estate to private security, we deliver consistent excellence across all premium services
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 text-center">
-            {[
-              { name: 'Real Estate', color: 'text-amber-600' },
-              { name: 'Air Travel', color: 'text-blue-600' }, 
-              { name: 'Transport', color: 'text-emerald-600' },
-              { name: 'Corporate', color: 'text-purple-600' },
-              { name: 'Lifestyle', color: 'text-rose-600' },
-              { name: 'Events', color: 'text-indigo-600' },
-              { name: 'Security', color: 'text-slate-600' }
-            ].map((service, index) => (
-              <div key={service.name} className="space-y-3 group cursor-pointer" style={{ animationDelay: `${1200 + index * 100}ms` }}>
-                <div className="w-16 h-16 bg-slate-50 group-hover:bg-slate-100 rounded-lg mx-auto mb-3 transition-all duration-300 flex items-center justify-center border border-slate-200 group-hover:border-slate-300">
-                  <div className={`w-8 h-8 bg-current ${service.color} opacity-20 group-hover:opacity-40 rounded transition-all`}></div>
-                </div>
-                <p className={`text-sm font-medium ${service.color} group-hover:opacity-80 transition-opacity`}>
-                  {service.name}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
