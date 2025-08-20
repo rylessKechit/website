@@ -241,7 +241,7 @@ export default function CTASection() {
                     "Tailored service recommendations", 
                     "Transparent pricing discussion",
                     "Immediate next steps"
-                  ].map((item, index) => (
+                  ].map((item) => (
                     <div key={item} className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0" />
                       <span className="text-slate-700">{item}</span>

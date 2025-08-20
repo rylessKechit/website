@@ -94,7 +94,7 @@ export default function AboutPreview() {
                     { name: "Sylvia", role: "Client Relations", color: "bg-purple-600" },
                     { name: "Alisha", role: "Lifestyle Manager", color: "bg-rose-600" },
                     { name: "Emmanuel", role: "Security Director", color: "bg-amber-600" }
-                  ].map((member, index) => (
+                  ].map((member) => (
                     <div key={member.name} className="flex items-center space-x-4">
                       <div className={`w-10 h-10 ${member.color} rounded-full flex items-center justify-center`}>
                         <span className="text-white font-medium text-sm">{member.name.charAt(0)}</span>
