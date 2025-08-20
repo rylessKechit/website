@@ -40,8 +40,6 @@ export const LOCATIONS = [
   'London',
   'New York', 
   'Paris',
-  'Dubai',
-  'Hong Kong'
 ] as const;
 
 // Format phone number for display

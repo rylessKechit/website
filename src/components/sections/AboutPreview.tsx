@@ -89,11 +89,12 @@ export default function AboutPreview() {
                 <h3 className="text-xl font-medium text-slate-900 mb-6">Leadership Team</h3>
                 <div className="space-y-4">
                   {[
-                    { name: "Jackenson", role: "Founder & CEO", color: "bg-blue-600" },
+                    { name: "Emmanuel", role: "Co-founder London", color: "bg-amber-600" },
+                    { name: "Jaken", role: "Co-founder Paris", color: "bg-blue-600" },
+                    { name: "Jessica", role: "Meet & Greet Director", color: "bg-amber-600" },
                     { name: "Godfrey", role: "Operations Director", color: "bg-emerald-600" },
                     { name: "Sylvia", role: "Client Relations", color: "bg-purple-600" },
-                    { name: "Alisha", role: "Lifestyle Manager", color: "bg-rose-600" },
-                    { name: "Emmanuel", role: "Security Director", color: "bg-amber-600" }
+                    { name: "Alisha", role: "Lifestyle Manager", color: "bg-rose-600" }
                   ].map((member) => (
                     <div key={member.name} className="flex items-center space-x-4">
                       <div className={`w-10 h-10 ${member.color} rounded-full flex items-center justify-center`}>
@@ -113,9 +114,9 @@ export default function AboutPreview() {
             <div className="grid grid-cols-2 gap-6">
               <Card className="bg-white border border-slate-200">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-light text-slate-900 mb-2">5</div>
+                  <div className="text-3xl font-light text-slate-900 mb-2">3</div>
                   <div className="text-sm text-slate-600">Global Cities</div>
-                  <div className="text-xs text-slate-500 mt-1">London • New York • Paris • Dubai • Hong Kong</div>
+                  <div className="text-xs text-slate-500 mt-1">London • New York • Paris</div>
                 </CardContent>
               </Card>
               
